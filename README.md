@@ -1,87 +1,87 @@
-# Athena: AI-Powered Learning Assistant for Teachers - Cloud Computing ☁️💻
+# Athena: AI-Powered Learning Assistant for Teachers - Mobile Development 📱
 
-Welcome to the cloud computing section of the Athena repository! This part of the project focuses on leveraging cloud services to support the AI-powered learning assistant, ensuring scalability, reliability, and efficiency.
+Welcome to the mobile development section of the Athena repository! This part of the project focuses on building the Android application that empowers teachers with AI tools, streamlining administrative tasks, enhancing student engagement, and personalizing learning experiences.
 
 ## Key Features ✨
 
-- **Backend Hosting**: Utilize Google Cloud Platform (GCP) for hosting the backend infrastructure.
-- **Machine Learning Model Deployment**: Deploy and manage machine learning models on GCP.
-- **Database Management**: Use GCP services (e.g., Firebase) for database and authentication management.
+- **Document-Based Chatbot**: Interact with a chatbot trained on specific educational materials to answer student questions and provide personalized guidance.
+- **Object Detection-Based Attendance**: Automate attendance tracking using object detection technology.
+- **(Future Development) Document Reader (OCR)**: Extract text from documents and images for easy access and analysis.
+- **(Future Development) Object Detection-Based Answer Sheet Reader**: Automatically grade answer sheets using object detection.
 
-## Cloud Services Utilized 🌐
+## Programming Languages 🖥️
 
-### Google Cloud Platform (GCP)
-- **Compute Engine**: For scalable virtual machines to host backend services.
-- **Cloud Storage**: Secure and scalable object storage for storing educational materials, images, and documents.
-- **Cloud Functions**: Serverless execution environment for building and connecting cloud services.
-- **Firebase**: For real-time database and user authentication services.
-- **AI Platform**: For training and deploying machine learning models.
+- **Java**: Primary language for Android app development.
+- **JavaScript**: Potential use for web components and integration with React Native for UI development.
 
-### Deployment Architecture 📊
+## Libraries & Frameworks 🛠️
 
-1. **Frontend (Android App)**:
-   - User interacts with the Android app.
-   - App sends requests to backend services hosted on GCP.
+### Android Development
+- **Android SDK**: Official software development kit for Android, providing tools and APIs for building Android apps.
+- **Android Jetpack**: Suite of libraries for accelerating Android development and improving app quality.
+- **CameraX**: Jetpack library simplifying camera app development and providing consistent camera experiences across devices.
 
-2. **Backend Services**:
-   - Hosted on GCP Compute Engine or Cloud Functions.
-   - Handles requests from the app, processes data, and communicates with the database.
+### UI Development
+- **React Native (Potential)**: Framework for building native mobile apps using JavaScript and React, offering code reusability across platforms.
 
-3. **Machine Learning Models**:
-   - Deployed on GCP AI Platform.
-   - Models are used for NLP tasks, object detection, and other AI functionalities.
+## Project Structure 📁
 
-4. **Database and Authentication**:
-   - Managed using Firebase.
-   - Provides real-time data synchronization and secure user authentication.
+```plaintext
+athena/
+└── mobile-development/
+    ├── app/
+    │   ├── src/
+    │   │   ├── main/
+    │   │   │   ├── java/
+    │   │   │   ├── res/
+    │   │   │   └── AndroidManifest.xml
+    │   ├── build.gradle
+    │   └── settings.gradle
+    ├── docs/
+    ├── tests/
+    └── README.md
+```
 
-## Setup and Deployment 🛠️
+## Setup and Installation 🛠️
 
 ### Prerequisites
-- Google Cloud Platform account.
-- Firebase project setup.
-- GCP SDK installed on your local machine.
+- Android Studio installed
+- Java Development Kit (JDK) 8 or higher
+- Git
 
 ### Steps
 
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yourusername/athena.git
-   cd athena/cloud-computing
+   cd athena/mobile-development
    ```
 
-2. **Set Up GCP Project**:
-   - Create a new project on GCP.
-   - Enable necessary APIs: Compute Engine, Cloud Storage, Cloud Functions, AI Platform, Firebase.
+2. **Open the Project in Android Studio**:
+   - Open Android Studio.
+   - Select `Open an existing Android Studio project`.
+   - Navigate to the `athena/mobile-development` directory and open it.
 
-3. **Deploy Backend Services**:
-   - Use GCP Cloud Functions or Compute Engine to deploy backend services.
-   - Ensure services are configured to handle requests from the Android app.
+3. **Build the Project**:
+   - Sync the project with Gradle files.
+   - Build the project to ensure all dependencies are correctly downloaded and configured.
 
-4. **Deploy Machine Learning Models**:
-   - Train models using AI Platform.
-   - Deploy models to AI Platform for serving predictions.
-
-5. **Configure Firebase**:
-   - Set up Firebase in your GCP project.
-   - Configure real-time database and authentication.
-
-6. **Update Android App Configuration**:
-   - Ensure the app is configured to communicate with the backend services and Firebase.
+4. **Run the Application**:
+   - Connect an Android device or start an emulator.
+   - Click on the `Run` button in Android Studio to install and run the application on your device.
 
 ## Project Status 🚀
 
-The cloud computing components are actively being developed and refined to ensure robust support for Athena's AI features. We are focused on optimizing performance, security, and scalability.
+The mobile development components are actively being developed, with core features of the chatbot and attendance tracking nearing completion. We are continuously refining the user interface and improving overall performance.
 
 ## Team Members 👥
 
-- **Muhammad Dzaki Fakhrezi** (CC)
-- **Juliandi Kurniansyah** (CC)
+- **Muhammad Haikal Fikri** (MD)
+- **Bramasta Natanael Dangawa** (MD)
 
 ## Disclaimer ⚠️
 
 This project is a work in progress and may contain bugs or unfinished features. Please use it at your own risk.
-
 ---
 
-Thank you for contributing to the cloud computing section of Athena! Your efforts help enhance the educational experience for teachers and students. 🎓
+Thank you for contributing to the mobile development section of Athena! Your efforts help enhance the educational experience for teachers and students. 🎓
