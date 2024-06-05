@@ -54,6 +54,10 @@ The project is currently in active development, with the core features of the ch
 
 We welcome contributions from the developer community! Please see our contributing guidelines for more information on how to get involved.
 
+- [Machine Learning Development](https://github.com/Athena-Learning-Assistant/Athena-Learning-Assistant/tree/Machine-Learning)
+- [Mobile Development](https://github.com/Athena-Learning-Assistant/Athena-Learning-Assistant/tree/Mobile-Development)
+- [Cloud Computing](https://github.com/Athena-Learning-Assistant/Athena-Learning-Assistant/tree/Cloud-Computing)
+
 ## Disclaimer ⚠️
 
 This project is a work in progress and may contain bugs or unfinished features. Please use it at your own risk.
