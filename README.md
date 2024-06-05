@@ -1,67 +1,87 @@
-# Athena:Learning Assistant 📚🤖
+# Athena: AI-Powered Learning Assistant for Teachers - Cloud Computing ☁️💻
 
-Welcome to the Athena repository! This Android application empowers teachers with artificial intelligence tools, streamlining administrative tasks, enhancing student engagement, and personalizing learning experiences.
+Welcome to the cloud computing section of the Athena repository! This part of the project focuses on leveraging cloud services to support the AI-powered learning assistant, ensuring scalability, reliability, and efficiency.
 
 ## Key Features ✨
 
-- **Document-Based Chatbot**: Interact with a chatbot trained on specific educational materials to answer student questions and provide personalized guidance.
-- **Object Detection-Based Attendance**: Automate attendance tracking using object detection technology, saving teachers valuable time and effort.
-- **(Future Development) Document Reader (OCR)**: Extract text from documents and images for easy access and analysis.
-- **(Future Development) Object Detection-Based Answer Sheet Reader**: Automatically grade answer sheets using object detection, simplifying assessment tasks.
+- **Backend Hosting**: Utilize Google Cloud Platform (GCP) for hosting the backend infrastructure.
+- **Machine Learning Model Deployment**: Deploy and manage machine learning models on GCP.
+- **Database Management**: Use GCP services (e.g., Firebase) for database and authentication management.
 
-## Programming Languages 🖥️
+## Cloud Services Utilized 🌐
 
-- **Python**: Machine learning models, data preprocessing, and backend scripting.
-- **Java**: Primary language for Android app development.
-- **JavaScript**: Web components and potential integration with React Native for UI development.
+### Google Cloud Platform (GCP)
+- **Compute Engine**: For scalable virtual machines to host backend services.
+- **Cloud Storage**: Secure and scalable object storage for storing educational materials, images, and documents.
+- **Cloud Functions**: Serverless execution environment for building and connecting cloud services.
+- **Firebase**: For real-time database and user authentication services.
+- **AI Platform**: For training and deploying machine learning models.
 
-## Libraries & Frameworks 🛠️
+### Deployment Architecture 📊
 
-### Machine Learning
-- **TensorFlow**: Popular deep learning framework for building and training models.
-- **PyTorch**: Powerful deep learning framework offering flexibility and dynamic computation graphs.
-- **Hugging Face Transformers**: Library for state-of-the-art natural language processing models (e.g., BERT, GPT-2) and tools.
-- **Scikit-learn**: Versatile library for traditional machine learning algorithms and data preprocessing tasks.
-- **NLTK (Natural Language Toolkit)**: Comprehensive toolkit for various NLP tasks, including tokenization, stemming, and part-of-speech tagging.
-- **SpaCy**: Industrial-strength NLP library known for its speed and accuracy in text processing.
+1. **Frontend (Android App)**:
+   - User interacts with the Android app.
+   - App sends requests to backend services hosted on GCP.
 
-### Android Development
-- **Android SDK**: Official software development kit for Android, providing tools and APIs for building Android apps.
-- **Android Jetpack**: Suite of libraries for accelerating Android development and improving app quality.
-- **CameraX**: Jetpack library simplifying camera app development and providing consistent camera experiences across devices.
+2. **Backend Services**:
+   - Hosted on GCP Compute Engine or Cloud Functions.
+   - Handles requests from the app, processes data, and communicates with the database.
 
-### UI Development
-- **React Native (Potential)**: Framework for building native mobile apps using JavaScript and React, offering code reusability across platforms.
+3. **Machine Learning Models**:
+   - Deployed on GCP AI Platform.
+   - Models are used for NLP tasks, object detection, and other AI functionalities.
 
-### Cloud Services
-- **Google Cloud Platform (GCP)**: Hosting backend infrastructure, deploying machine learning models, and potentially leveraging other GCP services (e.g., Firebase) for database and authentication.
+4. **Database and Authentication**:
+   - Managed using Firebase.
+   - Provides real-time data synchronization and secure user authentication.
+
+## Setup and Deployment 🛠️
+
+### Prerequisites
+- Google Cloud Platform account.
+- Firebase project setup.
+- GCP SDK installed on your local machine.
+
+### Steps
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/athena.git
+   cd athena/cloud-computing
+   ```
+
+2. **Set Up GCP Project**:
+   - Create a new project on GCP.
+   - Enable necessary APIs: Compute Engine, Cloud Storage, Cloud Functions, AI Platform, Firebase.
+
+3. **Deploy Backend Services**:
+   - Use GCP Cloud Functions or Compute Engine to deploy backend services.
+   - Ensure services are configured to handle requests from the Android app.
+
+4. **Deploy Machine Learning Models**:
+   - Train models using AI Platform.
+   - Deploy models to AI Platform for serving predictions.
+
+5. **Configure Firebase**:
+   - Set up Firebase in your GCP project.
+   - Configure real-time database and authentication.
+
+6. **Update Android App Configuration**:
+   - Ensure the app is configured to communicate with the backend services and Firebase.
 
 ## Project Status 🚀
 
-The project is currently in active development, with the core features of the chatbot and attendance tracking nearing completion. We are actively working on refining the machine learning models and improving the overall user experience.
+The cloud computing components are actively being developed and refined to ensure robust support for Athena's AI features. We are focused on optimizing performance, security, and scalability.
 
 ## Team Members 👥
 
-- **Gilang Kurnia Mandari** (ML)
-- **Egi Erlangga** (ML)
-- **Nikolaus Harris** (ML)
 - **Muhammad Dzaki Fakhrezi** (CC)
 - **Juliandi Kurniansyah** (CC)
-- **Muhammad Haikal Fikri** (MD)
-- **Bramasta Natanael Dangawa** (MD)
-
-## Contributing 🤝
-
-We welcome contributions from the developer community! Please see our contributing guidelines for more information on how to get involved.
 
 ## Disclaimer ⚠️
 
 This project is a work in progress and may contain bugs or unfinished features. Please use it at your own risk.
 
-## Contact 📧
-
-For any questions or feedback, please contact us at egimon391@gmail.com.
-
 ---
 
-Thank you for visiting the Athena repository! We hope this project helps teachers and enhances the educational experience for students. 🎓
+Thank you for contributing to the cloud computing section of Athena! Your efforts help enhance the educational experience for teachers and students. 🎓
