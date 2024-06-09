@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginTop="8dp"
+    android:background="@color/purple">
+
+    <TextView
+        android:id="@+id/chatHistoryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make me a question from the document\n\nQuestion:\nGive two examples of\nabstract nouns.\n\nAnswer:\nLove, happiness."
+        android:textAlignment="textStart"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

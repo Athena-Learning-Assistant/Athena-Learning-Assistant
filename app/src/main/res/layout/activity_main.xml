@@ -2,18 +2,179 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Welcome Text -->
     <TextView
+        android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Hello Welcome to ATHENA !!!"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/baseline_account_circle_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <!-- Features Text -->
+    <TextView
+        android:id="@+id/featuresText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Features"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileImage" />
+
+    <!-- OCR Feature -->
+    <Button
+        android:id="@+id/ocrButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:background="@color/purple"
+        android:drawableTop="@drawable/baseline_ocr"
+        android:drawablePadding="8dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:text="OCR\nOptical Character Recognition"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/qaButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/featuresText"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.2" />
+
+    <!-- QA Feature -->
+    <Button
+        android:id="@+id/qaButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:background="@color/purple"
+        android:drawableTop="@drawable/baseline_qna"
+        android:drawablePadding="8dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:text="QA\nQuestion Answering"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ocrButton"
+        app:layout_constraintTop_toBottomOf="@+id/featuresText"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.2" />
+
+    <!-- TS Feature -->
+    <Button
+        android:id="@+id/tsButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:background="@color/purple"
+        android:drawableTop="@drawable/baseline_text_summarization"
+        android:drawablePadding="8dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:text="TS\nText Summarization"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/tgButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ocrButton"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.2" />
+
+    <!-- TG Feature -->
+    <Button
+        android:id="@+id/tgButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:background="@color/purple"
+        android:drawableTop="@drawable/baseline_text_summarization"
+        android:drawablePadding="8dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:text="TG\nText Generation"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toEndOf="@+id/tsButton"
+        app:layout_constraintTop_toBottomOf="@+id/qaButton"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <!-- Chat History Text -->
+    <TextView
+        android:id="@+id/chatHistoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Chat History"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tgButton" />
+
+    <!-- View All Link -->
+    <TextView
+        android:id="@+id/viewAllText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="View All"
+        android:textColor="#0000FF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/chatHistoryText" />
+
+    <!-- Chat History RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatHistoryRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chatHistoryText"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView" />
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:menu="@menu/bottom_navigation_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
