@@ -1,4 +1,4 @@
-package com.haikal.athena
+package com.haikal.athena.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
