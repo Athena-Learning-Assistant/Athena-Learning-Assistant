@@ -1,6 +1,25 @@
 <resources>
     <string name="app_name">ATHENA</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notification</string>
+
+    <string name="ed_login_email_error">Invalid email address</string>
+    <string name="ed_login_password_error">Password must be at least 8 characters wide</string>
+    <string name="ed_login_email_hint">Email</string>
+    <string name="ed_login_password_hint">Password</string>
+    <string name="iv_login_description">logo app</string>
+    <string name="tv_login_text">Sign in to your account</string>
+    <string name="btn_login_text">Login</string>
+    <string name="tv_login_to_register_hint_text">Not have an account?</string>
+    <string name="tv_login_to_register_text">Sign Up</string>
+    <string name="tv_forgot_password">Forgot Password?</string>
+    <string name="tv_forgot_password_text">Create new password</string>
+    <string name="ed_login_re_password_hint">Confirm Password</string>
+    <string name="btn_reset_password_text">Reset Password</string>
+    <string name="iv_register_description">logo app</string>
+    <string name="tv_register_text">Create an account</string>
+    <string name="ed_register_name_hint">Name</string>
+    <string name="ed_register_email_hint">Email</string>
+    <string name="ed_register_password_hint">Password</string>
+    <string name="btn_register_text">Register</string>
+    <string name="tv_register_to_login_hint_text">Already have an account?</string>
+    <string name="tv_register_to_login_text">Log in</string>
 </resources>
