@@ -5,7 +5,7 @@ require("dotenv").config();
 
 const JWT_SECRET = process.env.JWT_SECRET;
 const firebaseConfig = require("../config/firebase");
-// Initialize Firebase Admin SDK
+
 if (!admin.apps.length) {
   admin.initializeApp({
     credential: admin.credential.cert(firebaseConfig),
@@ -20,7 +20,7 @@ const getProfile = async (req, res) => {
   try {
     const usersRef = db.collection("users");
     const userDoc = usersRef.doc(uid);
-    const userData = await userDoc.get(); // Get the Firestore document snapshot
+    const userData = await userDoc.get(); 
 
     if (!userData.exists) {
       return res.status(404).send({ error: "User not found" });

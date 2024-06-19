@@ -5,7 +5,7 @@ require("dotenv").config();
 
 const JWT_SECRET = process.env.JWT_SECRET;
 const firebaseConfig = require("../config/firebase");
-// Initialize Firebase Admin SDK
+
 if (!admin.apps.length) {
   admin.initializeApp({
     credential: admin.credential.cert(firebaseConfig),
@@ -26,7 +26,7 @@ const register = async (req, res) => {
   try {
     const userRecord = await admin.auth().createUser({
       email: email,
-      password: password, // Store the original password in Firebase Auth
+      password: password, 
     });
 
     const hashedPassword = await bcrypt.hash(password, 10);
@@ -93,5 +93,5 @@ const login = async (req, res) => {
 module.exports = {
   register,
   login,
-  db, // Export the db variable
+  db, 
 };

@@ -7,7 +7,7 @@ const router = express.Router();
 router.post('/register', register);
 router.post('/login', login);
 
-// Example protected route
+
 router.get('/profile', authenticateJWT, async (req, res) => {
   const user = req.user;
 
