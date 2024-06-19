@@ -1,5 +1,6 @@
 package com.haikal.athena.data.remote.retrofit
 
+import com.haikal.athena.data.remote.response.LoginResponse
 import com.haikal.athena.data.remote.response.RegisterResponse
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
@@ -13,4 +14,11 @@ interface ApiService {
         @Field("email") email: String,
         @Field("password") password: String,
     ): RegisterResponse
+
+    @FormUrlEncoded
+    @POST("auth/login")
+    suspend fun login(
+        @Field("email") email: String,
+        @Field("password") password: String,
+    ): LoginResponse
 }

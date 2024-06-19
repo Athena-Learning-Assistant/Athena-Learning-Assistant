@@ -25,4 +25,7 @@
     <string name="register_invalid_input_toast">invalid input data</string>
     <string name="register_failed_toast">Register failed: %1$s</string>
     <string name="register_success_toast">Register success, login to explore</string>
+    <string name="login_invalid_input_toast">you have invalid input</string>
+    <string name="login_failed_toast">Login failed: %1$s</string>
+    <string name="login_greetings_toast">Welcome %1$s</string>
 </resources>

@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.haikal.athena.data.di.Injection
 import com.haikal.athena.data.repository.AuthRepository
+import com.haikal.athena.ui.auth.login.LoginViewModel
 import com.haikal.athena.ui.auth.register.RegisterViewModel
 
 class ViewModelFactory private constructor(
@@ -15,6 +16,9 @@ class ViewModelFactory private constructor(
         return when {
             modelClass.isAssignableFrom(RegisterViewModel::class.java) -> {
                 RegisterViewModel(authRepository)
+            }
+            modelClass.isAssignableFrom(LoginViewModel::class.java) -> {
+                LoginViewModel(authRepository)
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         } as T
