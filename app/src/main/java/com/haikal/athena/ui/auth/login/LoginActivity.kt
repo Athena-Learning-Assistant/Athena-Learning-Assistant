@@ -144,7 +144,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                 val checkTokenThread = Thread {
                     Thread.sleep(1000)
 
-                    val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
+                    val intent = Intent(this@LoginActivity, MainActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                     startActivity(intent)
                     finish()
