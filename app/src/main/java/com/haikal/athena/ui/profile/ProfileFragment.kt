@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.haikal.athena.OCRActivity
 import com.haikal.athena.databinding.FragmentProfileBinding
-import com.haikal.athena.ui.login.LoginActivity
+import com.haikal.athena.ui.auth.login.LoginActivity
 
 class ProfileFragment : Fragment() {
 

@@ -22,4 +22,7 @@
     <string name="btn_register_text">Register</string>
     <string name="tv_register_to_login_hint_text">Already have an account?</string>
     <string name="tv_register_to_login_text">Log in</string>
+    <string name="register_invalid_input_toast">invalid input data</string>
+    <string name="register_failed_toast">Register failed: %1$s</string>
+    <string name="register_success_toast">Register success, login to explore</string>
 </resources>

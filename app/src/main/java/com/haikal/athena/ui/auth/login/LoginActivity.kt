@@ -1,4 +1,4 @@
-package com.haikal.athena.ui.login
+package com.haikal.athena.ui.auth.login
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.haikal.athena.MainActivity
 import com.haikal.athena.databinding.ActivityLoginBinding
 import com.haikal.athena.ui.forgotPassword.ForgotPasswordActivity
-import com.haikal.athena.ui.register.RegisterActivity
+import com.haikal.athena.ui.auth.register.RegisterActivity
 
 class LoginActivity : AppCompatActivity() {
     private val binding by lazy { ActivityLoginBinding.inflate(layoutInflater) }

@@ -6,7 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.haikal.athena.MainActivity
 import com.haikal.athena.databinding.ActivityForgotPasswordBinding
-import com.haikal.athena.ui.login.LoginActivity
+import com.haikal.athena.ui.auth.login.LoginActivity
 
 class ForgotPasswordActivity : AppCompatActivity() {
     private val binding by lazy { ActivityForgotPasswordBinding.inflate(layoutInflater) }
