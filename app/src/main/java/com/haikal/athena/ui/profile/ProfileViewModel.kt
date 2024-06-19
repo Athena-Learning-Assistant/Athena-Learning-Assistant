@@ -1,13 +1,19 @@
 package com.haikal.athena.ui.profile
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
+import android.content.Context
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.asLiveData
+import androidx.lifecycle.viewModelScope
+import com.haikal.athena.data.local.pref.SessionManager
+import kotlinx.coroutines.launch
 
-class ProfileViewModel : ViewModel() {
+class ProfileViewModel(private val sessionManager: SessionManager) : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is Profile Fragment"
+    val authToken = sessionManager.authToken.asLiveData()
+
+    // Fungsi untuk logout
+    suspend fun logout() {
+        sessionManager.clearAuthToken()
+        // Tambahkan logika lain yang diperlukan saat logout
     }
-    val text: LiveData<String> = _text
 }

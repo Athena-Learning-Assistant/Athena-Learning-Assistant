@@ -5,39 +5,49 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.haikal.athena.OCRActivity
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
+import com.haikal.athena.MainActivity
 import com.haikal.athena.databinding.FragmentProfileBinding
+import com.haikal.athena.ui.ViewModelFactory
 import com.haikal.athena.ui.auth.login.LoginActivity
+import kotlinx.coroutines.launch
 
 class ProfileFragment : Fragment() {
 
-    private var _binding: FragmentProfileBinding? = null
+    private val viewModel: ProfileViewModel by viewModels {
+        ViewModelFactory.getInstance(requireContext())
+    }
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    private var _binding: FragmentProfileBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val profileViewModel =
-            ViewModelProvider(this).get(ProfileViewModel::class.java)
-
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Setup views and data
+        viewModel.authToken.observe(viewLifecycleOwner) { authToken ->
+            // Update UI with user info using authToken
+        }
 
         binding.btnLogout.setOnClickListener {
-            startActivity(Intent(requireContext(), LoginActivity::class.java))
-            Toast.makeText(requireContext(), "Logout Success", Toast.LENGTH_SHORT).show()
-            requireActivity().finish()
+            lifecycleScope.launch {
+                viewModel.logout()
+                startActivity(Intent(requireContext(), LoginActivity::class.java))
+                Toast.makeText(requireContext(), "Logout Success", Toast.LENGTH_SHORT).show()
+                requireActivity().finish()
+            }
         }
-        return root
     }
 
     override fun onDestroyView() {
