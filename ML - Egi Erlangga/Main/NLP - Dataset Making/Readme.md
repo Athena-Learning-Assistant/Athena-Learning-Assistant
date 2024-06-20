@@ -13,7 +13,6 @@ This is the step to semi auto-generate the dataset for your llama.
    ```extension prompt
    =GPT("buat 1 pertanyaan ujian tanpa disertai jawaban saja, tanpa kata-kata lain selain soal untuk "; E2)
    ```
-   or you can try another prompt using another LLM extension.
 4. Now you have your question column, do the answer based on your question, and use the prompt to make answer based on your needs!
 
 ## Creating and Uploading a Dataset using Hugging Face
