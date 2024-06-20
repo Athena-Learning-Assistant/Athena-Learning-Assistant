@@ -111,11 +111,7 @@ push_to_hub(dataset=dataset_hf, repo_name=dataset_name)
 
 ### License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-### Contact
-
-For any questions or suggestions, feel free to reach out to me at [Your Contact Information].
+This project is not licensed yet
 
 ---
 
