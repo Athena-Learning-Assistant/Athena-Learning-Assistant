@@ -1,5 +1,5 @@
 ## RAG System Using Llama2 with Hugging Face
-
+![Example Image](images/RAG.png)
 ### Overview
 
 This project demonstrates how to build a Retrieval-Augmented Generation (RAG) system using Llama2 and Hugging Face. The RAG system combines retrieval mechanisms with generative models to provide accurate and context-aware responses to queries based on a given set of documents. Notes that the model i used here is a finetuned version of llama 2, so if you want to know more about how to deploy your own model, you can get it here :
