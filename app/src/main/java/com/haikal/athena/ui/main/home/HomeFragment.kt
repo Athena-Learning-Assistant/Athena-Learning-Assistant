@@ -7,10 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.haikal.athena.ui.features.OCRActivity
+import com.haikal.athena.ui.features.ocr.OCRActivity
 import com.haikal.athena.ui.features.QAActivity
 import com.haikal.athena.ui.features.TGActivity
-import com.haikal.athena.ui.features.TSActivity
+import com.haikal.athena.ui.features.cam.CamActivity
 import com.haikal.athena.adapter.ChatHistoryAdapter
 import com.haikal.athena.adapter.ChatHistoryItem
 import com.haikal.athena.databinding.FragmentHomeBinding
@@ -47,7 +47,7 @@ class HomeFragment : Fragment() {
         }
 
         binding.tsButton.setOnClickListener {
-            startActivity(Intent(requireContext(), TSActivity::class.java))
+            startActivity(Intent(requireContext(), CamActivity::class.java))
         }
 
         binding.tgButton.setOnClickListener {

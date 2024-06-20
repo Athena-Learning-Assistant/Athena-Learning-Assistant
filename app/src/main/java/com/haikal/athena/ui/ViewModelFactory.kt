@@ -1,5 +1,6 @@
 package com.haikal.athena.ui
 
+import android.app.Application
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -8,9 +9,12 @@ import com.haikal.athena.data.local.pref.SessionManager
 import com.haikal.athena.data.repository.AuthRepository
 import com.haikal.athena.ui.auth.login.LoginViewModel
 import com.haikal.athena.ui.auth.register.RegisterViewModel
+import com.haikal.athena.ui.features.cam.ResultViewModel
+import com.haikal.athena.ui.main.absent.AbsentViewModel
 import com.haikal.athena.ui.main.profile.ProfileViewModel
 
 class ViewModelFactory private constructor(
+    private val application: Application,
     private val authRepository: AuthRepository,
     private val sessionManager: SessionManager
 ) : ViewModelProvider.NewInstanceFactory() {
@@ -27,6 +31,12 @@ class ViewModelFactory private constructor(
             modelClass.isAssignableFrom(ProfileViewModel::class.java) -> {
                 ProfileViewModel(sessionManager)
             }
+            modelClass.isAssignableFrom(ResultViewModel::class.java) -> {
+                ResultViewModel(application)
+            }
+            modelClass.isAssignableFrom(AbsentViewModel::class.java) -> {
+                AbsentViewModel(application)
+            }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         } as T
     }
@@ -38,6 +48,7 @@ class ViewModelFactory private constructor(
         fun getInstance(context: Context): ViewModelFactory =
             INSTANCE ?: synchronized(this) {
                 ViewModelFactory(
+                    context.applicationContext as Application,
                     Injection.provideAuthRepository(context),
                     SessionManager(context)
                 ).also { INSTANCE = it }

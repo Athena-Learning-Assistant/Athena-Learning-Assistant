@@ -2,7 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
 
     <application
         android:allowBackup="true"
@@ -14,6 +23,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ATHENA"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.features.cam.CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.features.cam.ResultActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.auth.register.RegisterActivity"
             android:exported="false" />
@@ -33,25 +48,20 @@
             android:name=".ui.features.TGActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.features.TSActivity"
+            android:name=".ui.features.cam.CamActivity"
             android:exported="false" />
         <activity
             android:name=".ui.features.QAActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.features.OCRActivity"
+            android:name=".ui.features.ocr.OCRActivity"
             android:exported="false" />
         <activity
             android:name=".ui.main.MainActivity"
-            android:exported="false">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
+            android:exported="false"></activity>
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
     </application>
 
 </manifest>

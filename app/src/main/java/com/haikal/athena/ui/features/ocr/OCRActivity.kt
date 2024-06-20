@@ -1,4 +1,4 @@
-package com.haikal.athena.ui.features
+package com.haikal.athena.ui.features.ocr
 
 import android.os.Bundle
 import android.widget.Toast
