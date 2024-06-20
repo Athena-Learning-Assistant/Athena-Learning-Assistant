@@ -1,4 +1,4 @@
-package com.haikal.athena.ui.features
+package com.haikal.athena.ui.features.qa
 
 import android.os.Bundle
 import android.text.TextUtils

@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.haikal.athena.ui.features.ocr.OCRActivity
-import com.haikal.athena.ui.features.QAActivity
-import com.haikal.athena.ui.features.TGActivity
+import com.haikal.athena.ui.features.qa.QAActivity
+import com.haikal.athena.ui.features.tg.TGActivity
 import com.haikal.athena.ui.features.cam.CamActivity
 import com.haikal.athena.adapter.ChatHistoryAdapter
 import com.haikal.athena.adapter.ChatHistoryItem

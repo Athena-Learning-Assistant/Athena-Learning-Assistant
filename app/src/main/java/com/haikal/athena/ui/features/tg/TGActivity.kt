@@ -1,4 +1,4 @@
-package com.haikal.athena.ui.features
+package com.haikal.athena.ui.features.tg
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

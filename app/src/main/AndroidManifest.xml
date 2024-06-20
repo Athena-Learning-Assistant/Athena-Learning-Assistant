@@ -45,13 +45,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.features.TGActivity"
+            android:name=".ui.features.tg.TGActivity"
             android:exported="false" />
         <activity
             android:name=".ui.features.cam.CamActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.features.QAActivity"
+            android:name=".ui.features.qa.QAActivity"
             android:exported="false" />
         <activity
             android:name=".ui.features.ocr.OCRActivity"
