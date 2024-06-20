@@ -2,26 +2,29 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_athena"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ATHENA"
         tools:targetApi="31">
         <activity
-            android:name=".ui.auth.register.RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.forgotPassword.ForgotPasswordActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.auth.login.LoginActivity"
+            android:name=".ui.splash.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,28 +33,35 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TGActivity"
+            android:name=".ui.features.cam.CameraActivity"
             android:exported="false" />
         <activity
-            android:name=".TSActivity"
+            android:name=".ui.features.cam.ResultActivity"
             android:exported="false" />
         <activity
-            android:name=".QAActivity"
+            android:name=".ui.auth.register.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".OCRActivity"
+            android:name=".ui.auth.login.LoginActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.main.home.HistoriQaActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.features.cam.CamActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
+            android:name=".ui.features.qa.QAActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.features.ocr.OCRActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
     </application>
 
 </manifest>

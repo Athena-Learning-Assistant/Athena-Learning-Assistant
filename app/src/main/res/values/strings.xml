@@ -28,4 +28,27 @@
     <string name="login_invalid_input_toast">you have invalid input</string>
     <string name="login_failed_toast">Login failed: %1$s</string>
     <string name="login_greetings_toast">Welcome %1$s</string>
+    <string name="delete_description">Clear</string>
+    <string name="gallery">Gallery</string>
+    <string name="analyze">Analyze</string>
+    <string name="camera_x_description">Camera X</string>
+    <string name="preview_image">preview image</string>
+    <string name="image_saved">gambar absensi disimpan</string>
+    <string name="analyze_deleted">hapus absensi</string>
+    <string name="back_button">back button</string>
+    <string name="analyze_completed">Absent Gained</string>
+    <string name="result">Hasil Absensi</string>
+    <string name="save_result">Save Absensi</string>
+    <string name="analyze_saved">Absensi</string>
+    <string name="save_deleted">data absensi dihapus</string>
+    <string name="image_classifier_failed">Image classifier failed to initialize. Model error</string>
+    <string name="no_image">no image selected</string>
+    <string name="image_not_selected">select image from gallery</string>
+    <string name="analyze_failed">gagal mendapat absensi</string>
+    <string name="save_success">absensi berhasil disimpan</string>
+    <string name="save_no_data">tidak ada data absensi, silahkan simpan data di camera button</string>
+    <string name="welcome_to_athena">Welcome to ATHENA !!!</string>
+    <string name="profile_image">profile_image</string>
+    <string name="features_text">Features</string>
+    <string name="back_description">Back</string>
 </resources>

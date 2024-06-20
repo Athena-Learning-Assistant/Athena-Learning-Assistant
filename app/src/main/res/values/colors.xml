@@ -4,4 +4,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple">#673AB7</color>
     <color name="light_blue">#0099FF</color>
+    <color name="white_blue">#C8E3FE</color>
+    <color name="soft_blue">#6BC0FC</color>
+    <color name="blue">#229BD8</color>
+    <color name="darker_blue">#1775A4</color>
+    <color name="the_darker_blue">#0D5072</color>
+    <color name="dark_blue">#042f44</color>
+    <color name="blacked_blue">#01131E</color>
 </resources>

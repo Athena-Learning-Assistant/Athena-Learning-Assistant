@@ -49,6 +49,7 @@
             android:id="@+id/ed_login_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="?attr/colorSecondary"
             android:hint="@string/ed_login_email_hint"
             android:inputType="textEmailAddress"
             tools:ignore="SpeakableTextPresentCheck" />
@@ -73,20 +74,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/ed_login_password_hint"
+            android:background="?attr/colorSecondary"
             android:inputType="textPassword"
             tools:ignore="SpeakableTextPresentCheck" />
     </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:id="@+id/tv_forgot_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:gravity="center_vertical"
-        android:text="@string/tv_forgot_password"
-        android:textColor="@color/light_blue"
-        app:layout_constraintEnd_toEndOf="@+id/passwordEditTextLayout"
-        app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout" />
 
     <Button
         android:id="@+id/btn_login"

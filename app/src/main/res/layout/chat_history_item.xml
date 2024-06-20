@@ -5,14 +5,69 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:layout_marginTop="8dp"
-    android:background="@color/purple">
+    android:background="@drawable/rounded_bg">
 
     <TextView
         android:id="@+id/chatHistoryText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Make me a question from the document\n\nQuestion:\nGive two examples of\nabstract nouns.\n\nAnswer:\nLove, happiness."
+        android:text="Make me a question from the document"
         android:textAlignment="textStart"
-        android:textSize="14sp"
-        android:textColor="@android:color/white"/>
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/chatHistoryQuestionText"
+                android:layout_width="180dp"
+                android:layout_height="48dp"
+                android:text="Give two examples of abstract nouns."
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/chatHistoryAnswerText"
+                android:layout_width="180dp"
+                android:layout_height="48dp"
+                android:text="Love, Happiness"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

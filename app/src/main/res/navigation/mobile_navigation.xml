@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.haikal.athena.ui.home.HomeFragment"
+        android:name="com.haikal.athena.ui.main.home.HomeFragment"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_ai_chat"
-        android:name="com.haikal.athena.ui.aichat.AiChatFragment"
+        android:name="com.haikal.athena.ui.main.aichat.AiChatFragment"
         tools:layout="@layout/fragment_aichat" />
 
     <fragment
         android:id="@+id/navigation_absent"
-        android:name="com.haikal.athena.ui.absent.AbsentFragment"
+        android:name="com.haikal.athena.ui.main.absent.AbsentFragment"
         tools:layout="@layout/fragment_absent" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.haikal.athena.ui.profile.ProfileFragment"
+        android:name="com.haikal.athena.ui.main.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

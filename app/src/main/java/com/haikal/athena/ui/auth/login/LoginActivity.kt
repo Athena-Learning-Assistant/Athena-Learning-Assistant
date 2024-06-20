@@ -8,17 +8,20 @@ import android.view.View
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.haikal.athena.MainActivity
+import androidx.lifecycle.lifecycleScope
+import com.haikal.athena.ui.main.MainActivity
 import com.haikal.athena.R
 import com.haikal.athena.data.RequestInformation
+import com.haikal.athena.data.local.pref.SessionManager
 import com.haikal.athena.databinding.ActivityLoginBinding
 import com.haikal.athena.ui.ViewModelFactory
-import com.haikal.athena.ui.forgotPassword.ForgotPasswordActivity
 import com.haikal.athena.ui.auth.register.RegisterActivity
+import kotlinx.coroutines.launch
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
     private val binding by lazy { ActivityLoginBinding.inflate(layoutInflater) }
     private val viewModel: LoginViewModel by viewModels { ViewModelFactory.getInstance(this) }
+    private lateinit var sessionManager: SessionManager
     private val fields: List<View> by lazy {
         listOf(
             binding.ivLogin,
@@ -36,12 +39,27 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
         supportActionBar?.hide()
 
+        sessionManager = SessionManager(this)
+        checkLoggedIn()
+
         binding.btnLogin.setOnClickListener(this)
         binding.tvLoginToRegister.setOnClickListener(this)
         configureObserver()
 
         enableFields(true)
         playAnimation(true)
+    }
+
+    private fun checkLoggedIn() {
+        lifecycleScope.launch {
+            sessionManager.authToken.collect { authToken ->
+                if (!authToken.isNullOrEmpty()) {
+                    // Jika token tersedia, lanjutkan ke MainActivity
+                    startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+                    finish()
+                }
+            }
+        }
     }
 
     private fun login(email: String, password: String) {
