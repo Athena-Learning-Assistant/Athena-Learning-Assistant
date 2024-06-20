@@ -11,7 +11,7 @@ Welcome to the cloud computing section of the Athena repository! This part of th
 ## Cloud Services Utilized 🌐
 
 ### Google Cloud Platform (GCP)
-- **Compute Engine**: For scalable virtual machines to host backend services.
+- **Cloud Run**: For serverless service to host backend services.
 - **Cloud Storage**: Secure and scalable object storage for storing educational materials, images, and documents.
 - **Cloud Functions**: Serverless execution environment for building and connecting cloud services.
 - **Firebase**: For real-time database and user authentication services.
@@ -24,7 +24,7 @@ Welcome to the cloud computing section of the Athena repository! This part of th
    - App sends requests to backend services hosted on GCP.
 
 2. **Backend Services**:
-   - Hosted on GCP Compute Engine or Cloud Functions.
+   - Hosted on Google Cloud Run or Cloud Functions.
    - Handles requests from the app, processes data, and communicates with the database.
 
 3. **Machine Learning Models**:
@@ -41,6 +41,12 @@ Welcome to the cloud computing section of the Athena repository! This part of th
 - Google Cloud Platform account.
 - Firebase project setup.
 - GCP SDK installed on your local machine.
+
+### Api Documentation
+- **For Api Documentation you can visit this link**
+   ```
+   https://documenter.getpostman.com/view/27889467/2sA3XV7JsC
+   ```
 
 ### Steps
 
@@ -68,6 +74,21 @@ Welcome to the cloud computing section of the Athena repository! This part of th
 
 6. **Update Android App Configuration**:
    - Ensure the app is configured to communicate with the backend services and Firebase.
+
+7. **Create Config Folder**:
+   - Ensure the config folder is located in root.
+
+8. **Install Required Dependencies**:
+   ```npm install
+   ```
+
+9. **Run Script**:
+   ```npm run start
+   ```
+
+9. **Run Script**:
+   ```gcloud run deploy
+   ```
 
 ## Project Status 🚀
 
