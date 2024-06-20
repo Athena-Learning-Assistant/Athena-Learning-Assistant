@@ -23,7 +23,7 @@ This a step-by-step guide for creating a dataset formatted for Llama training us
 
 This project demonstrates how to:
 
-1. Load a dataset from Hugging Face.
+1. Load a dataset from Hugging Face or your own custom dataset.
 2. Format the data for Llama training.
 3. Convert the data into a Hugging Face dataset format.
 4. Upload the dataset to the Hugging Face Hub.
