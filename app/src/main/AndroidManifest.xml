@@ -24,6 +24,15 @@
         android:theme="@style/Theme.ATHENA"
         tools:targetApi="31">
         <activity
+            android:name=".ui.splash.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ui.features.cam.CameraActivity"
             android:exported="false" />
         <activity
@@ -33,20 +42,11 @@
             android:name=".ui.auth.register.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.auth.forgotPassword.ForgotPasswordActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.auth.login.LoginActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"/>
         <activity
-            android:name=".ui.features.tg.TGActivity"
-            android:exported="false" />
+            android:name=".ui.main.home.HistoriQaActivity"
+            android:exported="false"/>
         <activity
             android:name=".ui.features.cam.CamActivity"
             android:exported="false" />
@@ -58,7 +58,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.main.MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name="com.canhub.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />

@@ -90,7 +90,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/tv_name_detail"
-                    android:text="James Hurve Murphy"
+                    android:text="Jhon Doe"
                     android:layout_marginStart="8dp"/>
             </LinearLayout>
 
@@ -110,7 +110,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/tv_email_detail"
-                    android:text="JamesHurve@gmail.com"
+                    android:text="jhondoe@gmail.com"
                     android:layout_marginStart="8dp"/>
             </LinearLayout>
 

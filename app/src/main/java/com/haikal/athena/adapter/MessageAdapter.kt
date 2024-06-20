@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.haikal.athena.databinding.ItemMessageReceivedBinding
 import com.haikal.athena.databinding.ItemMessageSentBinding
 
-class MessageAdapter(private val messages: List<Message>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class MessageAdapter(var messages: List<Message>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val VIEW_TYPE_SENT = 1
     private val VIEW_TYPE_RECEIVED = 2

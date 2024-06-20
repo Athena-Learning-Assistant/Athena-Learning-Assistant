@@ -44,9 +44,6 @@ class AbsentFragment : Fragment() {
         val layoutManager = LinearLayoutManager(requireContext())
 
         binding.rvHistory.layoutManager = layoutManager
-        binding.btnBack.setOnClickListener {
-            requireActivity().onBackPressed()
-        }
 
         val itemDecoration = DividerItemDecoration(requireContext(), layoutManager.orientation)
         binding.rvHistory.addItemDecoration(itemDecoration)

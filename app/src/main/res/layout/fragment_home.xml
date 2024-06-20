@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Welcome to ATHENA !!!"
+        android:text="@string/welcome_to_athena"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,6 +27,7 @@
         android:layout_margin="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:contentDescription="@string/profile_image"
         android:src="@drawable/baseline_account_circle_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,91 +39,128 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Features"
+        android:text="@string/features_text"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/profileImage" />
 
-    <!-- OCR Feature -->
-    <Button
-        android:id="@+id/ocrButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="8dp"
-        android:background="@color/purple"
-        android:drawableTop="@drawable/baseline_ocr"
-        android:drawablePadding="8dp"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:text="OCR\nOptical Character Recognition"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toStartOf="@+id/qaButton"
-        app:layout_constraintHeight_percent="0.2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/featuresText"
-        app:layout_constraintWidth_percent="0.4" />
-
     <!-- QA Feature -->
-    <Button
-        android:id="@+id/qaButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="8dp"
-        android:background="@color/purple"
-        android:drawableTop="@drawable/baseline_qna"
-        android:drawablePadding="8dp"
-        android:orientation="vertical"
+    <LinearLayout
+        android:id="@+id/qa_feature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:padding="16dp"
-        android:text="QA\nQuestion Answering"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.2"
-        app:layout_constraintStart_toEndOf="@+id/ocrButton"
-        app:layout_constraintTop_toBottomOf="@+id/featuresText"
-        app:layout_constraintWidth_percent="0.4" />
-
-    <!-- TS Feature -->
-    <Button
-        android:id="@+id/tsButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="16dp"
-        android:background="@color/purple"
-        android:drawableTop="@drawable/baseline_text_summarization"
-        android:drawablePadding="8dp"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:text="CAM\nDetection"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toStartOf="@+id/tgButton"
-        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintEnd_toStartOf="@+id/featuresText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ocrButton"
-        app:layout_constraintWidth_percent="0.4" />
+        app:layout_constraintTop_toBottomOf="@+id/featuresText"
+        android:background="@drawable/rounded_bg">
 
-    <!-- TG Feature -->
-    <Button
-        android:id="@+id/tgButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="16dp"
-        android:background="@color/purple"
-        android:drawableTop="@drawable/baseline_text_summarization"
-        android:drawablePadding="8dp"
-        android:orientation="vertical"
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berikan pertanyaan terkait dokumen yang anda berikan"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/qaButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Buka Sekarang"
+                android:backgroundTint="@color/purple"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iconImageView"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/baseline_qna" />
+    </LinearLayout>
+
+    <!-- OCR Feature -->
+    <LinearLayout
+        android:id="@+id/ocr_feature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:padding="16dp"
-        android:text="TG\nText Generation"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.2"
-        app:layout_constraintStart_toEndOf="@+id/tsButton"
-        app:layout_constraintTop_toBottomOf="@+id/qaButton"
-        app:layout_constraintWidth_percent="0.4" />
+        app:layout_constraintEnd_toStartOf="@+id/qa_feature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qa_feature"
+        android:background="@drawable/rounded_bg">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OCR"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/descriptionTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan dokumen dan ekstrak text secara otomatis untuk membantu anda"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/ocrButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Buka Sekarang"
+                android:backgroundTint="@color/purple"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iconImageView2"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/baseline_ocr" />
+    </LinearLayout>
+
 
     <!-- Chat History Text -->
     <TextView
@@ -135,11 +173,11 @@
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tgButton" />
+        app:layout_constraintTop_toBottomOf="@id/ocr_feature" />
 
     <!-- View All Link -->
     <TextView
-        android:id="@+id/viewAllText"
+        android:id="@+id/viewAllButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"

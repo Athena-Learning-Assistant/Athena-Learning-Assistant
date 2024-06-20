@@ -9,8 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.haikal.athena.ui.features.ocr.OCRActivity
 import com.haikal.athena.ui.features.qa.QAActivity
-import com.haikal.athena.ui.features.tg.TGActivity
-import com.haikal.athena.ui.features.cam.CamActivity
 import com.haikal.athena.adapter.ChatHistoryAdapter
 import com.haikal.athena.adapter.ChatHistoryItem
 import com.haikal.athena.databinding.FragmentHomeBinding
@@ -18,12 +16,7 @@ import com.haikal.athena.databinding.FragmentHomeBinding
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
-
     private val binding get() = _binding!!
-
-    private val chatHistoryAdapter: ChatHistoryAdapter by lazy {
-        ChatHistoryAdapter(generateDummyChatHistory())
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -33,9 +26,14 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val view = binding.root
 
+        val adapter = ChatHistoryAdapter(DummyData.data.take(3))
         with(binding.chatHistoryRecyclerView) {
-            adapter = chatHistoryAdapter
             layoutManager = LinearLayoutManager(this@HomeFragment.context)
+            this.adapter = adapter
+        }
+
+        binding.viewAllButton.setOnClickListener {
+            startActivity(Intent(requireContext(), HistoriQaActivity::class.java))
         }
 
         binding.ocrButton.setOnClickListener {
@@ -46,25 +44,11 @@ class HomeFragment : Fragment() {
             startActivity(Intent(requireContext(), QAActivity::class.java))
         }
 
-        binding.tsButton.setOnClickListener {
-            startActivity(Intent(requireContext(), CamActivity::class.java))
-        }
-
-        binding.tgButton.setOnClickListener {
-            startActivity(Intent(requireContext(), TGActivity::class.java))
-        }
-
         return view
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-    }
-
-    private fun generateDummyChatHistory(): List<ChatHistoryItem> {
-        return List(5) {
-            ChatHistoryItem("Make me a question from the document\n\nQuestion:\nGive two examples of abstract nouns.\n\nAnswer:\nLove, happiness.")
-        }
     }
 }

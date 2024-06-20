@@ -5,20 +5,27 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.haikal.athena.databinding.ChatHistoryItemBinding
 
-class ChatHistoryAdapter(private val chatHistoryList: List<ChatHistoryItem>) :
-    RecyclerView.Adapter<ChatHistoryAdapter.ChatHistoryViewHolder>() {
+class ChatHistoryAdapter(private val items: List<ChatHistoryItem>) :
+    RecyclerView.Adapter<ChatHistoryAdapter.ViewHolder>() {
 
-    class ChatHistoryViewHolder(val binding: ChatHistoryItemBinding) : RecyclerView.ViewHolder(binding.root)
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatHistoryViewHolder {
-        val binding = ChatHistoryItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return ChatHistoryViewHolder(binding)
+    inner class ViewHolder(private val binding: ChatHistoryItemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+        fun bind(item: ChatHistoryItem) {
+            binding.chatHistoryQuestionText.text = item.question
+            binding.chatHistoryAnswerText.text = item.answer
+        }
     }
 
-    override fun onBindViewHolder(holder: ChatHistoryViewHolder, position: Int) {
-        val currentItem = chatHistoryList[position]
-        holder.binding.chatHistoryText.text = currentItem.text
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val binding = ChatHistoryItemBinding.inflate(
+            LayoutInflater.from(parent.context), parent, false
+        )
+        return ViewHolder(binding)
     }
 
-    override fun getItemCount() = chatHistoryList.size
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.bind(items[position])
+    }
+
+    override fun getItemCount(): Int = items.size
 }

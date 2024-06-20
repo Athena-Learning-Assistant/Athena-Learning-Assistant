@@ -46,5 +46,9 @@
     <string name="image_not_selected">select image from gallery</string>
     <string name="analyze_failed">gagal mendapat absensi</string>
     <string name="save_success">absensi berhasil disimpan</string>
-    <string name="save_no_data">tidak ada data absensi</string>
+    <string name="save_no_data">tidak ada data absensi, silahkan simpan data di camera button</string>
+    <string name="welcome_to_athena">Welcome to ATHENA !!!</string>
+    <string name="profile_image">profile_image</string>
+    <string name="features_text">Features</string>
+    <string name="back_description">Back</string>
 </resources>

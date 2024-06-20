@@ -78,15 +78,6 @@ class CamActivity : AppCompatActivity() {
         binding.cameraXButton.setOnClickListener {
             startCameraX()
         }
-
-//        binding.buttonSave.setOnClickListener {
-//            val intentSave = Intent(this, SaveActivity::class.java)
-//            startActivity(intentSave)
-//        }
-//        binding.buttonArticle.setOnClickListener {
-//            val intentInformation = Intent(this, InformationActivity::class.java)
-//            startActivity(intentInformation)
-//        }
     }
 
     private val launcherGallery = registerForActivityResult(

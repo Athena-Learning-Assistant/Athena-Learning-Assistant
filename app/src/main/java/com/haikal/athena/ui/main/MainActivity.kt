@@ -1,5 +1,6 @@
 package com.haikal.athena.ui.main
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -8,6 +9,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.haikal.athena.R
 import com.haikal.athena.databinding.ActivityMainBinding
+import com.haikal.athena.ui.features.cam.CamActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,6 +36,11 @@ class MainActivity : AppCompatActivity() {
         )
         // Remove the action bar setup
         navView.setupWithNavController(navController)
+
+        binding.fabCam.setOnClickListener {
+            intent = Intent(this, CamActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
 
