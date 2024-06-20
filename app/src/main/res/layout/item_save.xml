@@ -21,7 +21,7 @@
             android:id="@+id/button_delete"
             android:layout_width="55dp"
             android:layout_height="55dp"
-            android:backgroundTint="?attr/colorTertiary"
+            android:backgroundTint="?attr/colorPrimary"
             android:contentDescription="@string/analyze_deleted"
             app:fabSize="normal"
             app:layout_constraintEnd_toEndOf="parent"
@@ -29,13 +29,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/baseline_bookmark_remove_24"
-            app:tint="?attr/colorOnPrimary" />
+            app:tint="?attr/colorOnSecondary" />
 
         <ImageView
             android:id="@+id/ivImage"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginBottom="6dp"
+            android:layout_margin="6dp"
             android:contentDescription="@string/image_saved"
             android:scaleType="fitCenter"
             app:layout_constraintStart_toStartOf="parent"
