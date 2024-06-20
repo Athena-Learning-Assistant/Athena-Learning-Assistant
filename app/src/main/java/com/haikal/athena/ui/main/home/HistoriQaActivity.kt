@@ -31,8 +31,7 @@ class HistoriQaActivity : AppCompatActivity() {
         }
 
         binding.btnBack.setOnClickListener {
-            startActivity(Intent(this, HomeFragment::class.java))
-            finish()
+            onBackPressed()
         }
     }
 

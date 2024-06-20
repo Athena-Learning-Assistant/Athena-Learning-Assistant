@@ -18,6 +18,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/onboarding_navigation"
-        />
+        app:navGraph="@navigation/onboarding_navigation" />
 </androidx.constraintlayout.widget.ConstraintLayout>

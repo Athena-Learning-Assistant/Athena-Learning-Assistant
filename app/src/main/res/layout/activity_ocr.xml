@@ -40,7 +40,6 @@
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="Optical Character Recognition"
-        android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/btnBack"

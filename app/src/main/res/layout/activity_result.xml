@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple"
+    android:background="?attr/colorPrimary"
     tools:context=".ui.features.cam.ResultActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -22,8 +22,7 @@
             android:elevation="5dp"
             android:src="@drawable/baseline_arrow_back_24"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="?attr/colorOnPrimary" />
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
@@ -67,7 +66,7 @@
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_margin="24dp"
-            android:backgroundTint="?attr/colorTertiary"
+            android:backgroundTint="?attr/colorPrimary"
             android:contentDescription="@string/save_result"
             app:fabSize="normal"
             app:layout_constraintEnd_toEndOf="@+id/result_image"

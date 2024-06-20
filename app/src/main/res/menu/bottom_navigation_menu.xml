@@ -6,7 +6,7 @@
         android:title="Home" />
     <item
         android:id="@+id/navigation_ai_chat"
-        android:icon="@drawable/baseline_ai_chat"
+        android:icon="@drawable/baseline_ai_chat2"
         android:title="Ai Chat" />
     <item
         android:id="@+id/navigation_false"

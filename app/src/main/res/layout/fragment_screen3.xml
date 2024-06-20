@@ -98,21 +98,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="0dp"
-            android:src="@drawable/dot_unfill" /> <!-- Replace with your actual drawable -->
+            android:src="@drawable/dot_fill" /> <!-- Replace with your actual drawable -->
 
         <!-- Dot 2 -->
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="0dp"
-            android:src="@drawable/dot_fill" /> <!-- Replace with your actual drawable -->
+            android:src="@drawable/dot_un_filled" /> <!-- Replace with your actual drawable -->
 
         <!-- Dot 3 -->
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="0dp"
-            android:src="@drawable/dot_unfill" /> <!-- Replace with your actual drawable -->
+            android:src="@drawable/dot_fill" /> <!-- Replace with your actual drawable -->
 
     </LinearLayout>
 
