@@ -1,4 +1,4 @@
-## Creating your own dataset using ChatGPT / Gemini extension in sheet
+## Creating your own dataset using ChatGPT / Gemini extension in Spreadsheet
 
 On this step, it required you to install some chatgpt or gemini extension for spreadsheet, if you have token for openai and gemini, you can also use the app script to auto generate data.
 
