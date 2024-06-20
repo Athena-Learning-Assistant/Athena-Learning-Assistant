@@ -94,4 +94,3 @@ This project is a work in progress and may contain bugs or unfinished features. 
 
 ---
 Thank you for contributing to the machine learning section of Athena! Your efforts help enhance the educational experience for teachers and students. 🎓
-```
