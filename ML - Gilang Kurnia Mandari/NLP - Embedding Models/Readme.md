@@ -115,11 +115,11 @@ For more details on the original model or dataset used for fine-tuning, refer to
 
 #### License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is not licensed yet
 
 ---
 
-Feel free to modify and extend this repository as needed for your applications or research in natural language processing. For any questions or issues, please contact [your@email.com](mailto:your@email.com).
+Feel free to modify and extend this repository as needed for your applications or research in natural language processing. For any questions or issues, please contact me.
 
 ---
 
