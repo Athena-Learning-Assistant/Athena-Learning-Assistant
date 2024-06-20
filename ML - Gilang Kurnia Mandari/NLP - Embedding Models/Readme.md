@@ -10,7 +10,7 @@ This repository contains a fine-tuned sentence embedding model designed for natu
 ---
 
 #### What is Sentence Embedding?
-![Athena RAG Workflow](images/Diagram-RAG.png)
+![Athena RAG Workflow](Images/Diagram-RAG.png)
 Sentence embedding refers to the process of converting a sentence or a piece of text into a numerical vector representation. This representation captures semantic and syntactic information about the sentence, enabling algorithms to understand the meaning and context of the text. 
 
 #### How It Works in Athena Learning Assistant
