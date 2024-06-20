@@ -2,7 +2,7 @@
 ![Athena RAG Workflow](images/Diagram-RAG.png)
 ### Overview
 
-This project demonstrates how to build a Retrieval-Augmented Generation (RAG) system using Llama2 and Hugging Face. The RAG system combines retrieval mechanisms with generative models to provide accurate and context-aware responses to queries based on a given set of documents. Notes that the model i used here is a finetuned version of llama 2, so if you want to know more about how to deploy your own model, you can get it here :
+This project demonstrates how to build a Retrieval-Augmented Generation (RAG) system using Llama2 and Hugging Face. The RAG system combines retrieval mechanisms with generative models to provide accurate and context-aware responses to queries based on a given set of documents. Notes that the model i used here is a finetuned version of llama 2, so if you want to know more about how to deploy your own model, you can get it here : [How To Make Dataset for LLAMA2](https://github.com/Athena-Learning-Assistant/Athena-Learning-Assistant/tree/Machine-Learning/ML%20-%20Egi%20Erlangga/Main/NLP%20-%20Dataset%20Making)
 
 feel fre to visit my huggingface hub at : [Equinox391](https://huggingface.co/Equinox391)
 
