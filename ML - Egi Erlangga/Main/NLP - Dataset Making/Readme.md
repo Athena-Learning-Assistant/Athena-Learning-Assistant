@@ -1,3 +1,11 @@
+## Finding dataset in internet
+Here's the place where we find the best dataset:
+1. Kaggle
+2. Huggingface
+3. Google Scholars
+4. Satu Data Indonesia
+But due to MVP as goals now, we use some light dataset from huggingface.
+
 ## Creating your own dataset using ChatGPT / Gemini extension in Spreadsheet
 
 On this step, it required you to install some chatgpt or gemini extension for spreadsheet, if you have token for openai and gemini, you can also use the app script to auto generate data.
