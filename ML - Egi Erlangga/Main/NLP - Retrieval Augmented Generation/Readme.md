@@ -111,7 +111,7 @@ By following this guide, you will be able to set up a robust RAG system that lev
 
 ### License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is not licensed yet
 
 ---
 
