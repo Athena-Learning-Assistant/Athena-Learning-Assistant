@@ -210,21 +210,3 @@ plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.show()
 ```
 
-## Saving Predictions
-Save the predictions to a CSV file.
-
-```python
-import pandas as pd
-
-predictions = [[0.2, 0.5, 0.3], [0.8, 0.1, 0.1], [0.4, 0.4, 0.2]]
-class_labels = ['Class 1', 'Class 2', 'Class 3']
-
-df_predictions = pd.DataFrame(predictions, columns=class_labels)
-csv_file_path = 'predictions.csv'
-df_predictions.to_csv(csv_file_path, index=False)
-
-print("Predictions have been saved to CSV file:", csv_file_path)
-
-from google.colab import files
-files.download(csv_file_path)
-```
