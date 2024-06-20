@@ -1,5 +1,5 @@
 ## RAG System Using Llama2 with Hugging Face
-![Athena RAG Workflow](images/Document Preprocessing and Embedding Creation.png)
+![Athena RAG Workflow](ML - Egi Erlangga/Main/NLP - Retrieval Augmented Generation/images/Document Preprocessing and Embedding Creation.png)
 ### Overview
 
 This project demonstrates how to build a Retrieval-Augmented Generation (RAG) system using Llama2 and Hugging Face. The RAG system combines retrieval mechanisms with generative models to provide accurate and context-aware responses to queries based on a given set of documents. Notes that the model i used here is a finetuned version of llama 2, so if you want to know more about how to deploy your own model, you can get it here :
