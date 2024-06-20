@@ -1,3 +1,5 @@
+Here's the revised README.md file based on the provided structure and GitHub repository link:
+
 # Athena: AI-Powered Learning Assistant for Teachers - Machine Learning 🧠🤖
 
 Welcome to the machine learning section of the Athena repository! This part of the project focuses on developing and integrating machine learning models to empower the AI-powered learning assistant, enhancing its capabilities in natural language processing, object detection, and more.
@@ -32,24 +34,18 @@ Welcome to the machine learning section of the Athena repository! This part of t
 ## Project Structure 📁
 
 ```plaintext
-athena/
-└── machine-learning/
-    ├── models/
-    │   ├── chatbot/
-    │   ├── object_detection/
-    │   └── ocr/
-    ├── data/
-    │   ├── raw/
-    │   └── processed/
-    ├── notebooks/
-    │   ├── data_preprocessing.ipynb
-    │   ├── model_training.ipynb
-    │   └── model_evaluation.ipynb
-    ├── src/
-    │   ├── preprocessing.py
-    │   ├── train.py
-    │   └── evaluate.py
-    └── README.md
+ML - Egi Erlangga
+├── Main/
+│   ├── Model/
+│   ├── NLP - Convert Model to GGUF/
+│   ├── NLP - Dataset Making/
+│   ├── NLP - LLAMA 2 Model Finetuning/
+│   └── NLP - Retrieval Augmented Generation/
+├── Research/
+│   ├── CV - Attendance Object Detection/
+│   └── NLP - Embedding Models/
+ML - Nikolaus Harris
+README.md
 ```
 
 ## Setup and Installation 🛠️
@@ -63,8 +59,8 @@ athena/
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/athena.git
-   cd athena/machine-learning
+   git clone git@github.com:Athena-Learning-Assistant/Athena-Learning-Assistant.git
+   cd Athena-Learning-Assistant
    ```
 
 2. **Create and Activate a Virtual Environment**:
@@ -78,19 +74,15 @@ athena/
    pip install -r requirements.txt
    ```
 
-4. **Download and Prepare Data**:
-   - Place raw data in the `data/raw/` directory.
-   - Run preprocessing scripts or Jupyter notebooks in the `notebooks/` directory to prepare the data.
+4. **Navigate to the Desired Section**:
+   - Depending on your interest (Main or Research), navigate to the corresponding directory.
 
-5. **Train Models**:
-   - Use the training scripts or Jupyter notebooks in the `notebooks/` or `src/` directory to train your models.
-
-6. **Evaluate Models**:
-   - Evaluate the performance of your models using the provided evaluation scripts or notebooks.
+5. **Explore and Contribute**:
+   - You can explore the provided subdirectories for each team member's contributions and follow their respective README files for more specific instructions.
 
 ## Project Status 🚀
 
-The machine learning components are in active development, with core features of the chatbot and attendance tracking nearing completion. We are continuously refining models and improving overall performance.
+The machine learning components are in active development, with ongoing work in various areas such as NLP model enhancement, object detection for attendance tracking, and more.
 
 ## Team Members 👥
 
@@ -105,3 +97,4 @@ This project is a work in progress and may contain bugs or unfinished features. 
 ---
 
 Thank you for contributing to the machine learning section of Athena! Your efforts help enhance the educational experience for teachers and students. 🎓
+```
