@@ -46,7 +46,6 @@ Welcome to the cloud computing section of the Athena repository! This part of th
 - **For Api Documentation you can visit this link**
    - https://documenter.getpostman.com/view/27889467/2sA3XV7JsC
    
-
 ### Steps
 
 1. **Clone the Repository**:
@@ -78,13 +77,19 @@ Welcome to the cloud computing section of the Athena repository! This part of th
    - Ensure the config folder is located in root.
 
 8. **Install Required Dependencies**:
-   ```npm install```
+   ```
+   npm install
+   ```
 
 9. **Run Script**:
-   ```npm run start ```
+   ```
+   npm run start 
+   ```
 
 9. **Run Script**:
-   ```gcloud run deploy```
+   ```
+   gcloud run deploy
+   ```
 
 ## Project Status 🚀
 
