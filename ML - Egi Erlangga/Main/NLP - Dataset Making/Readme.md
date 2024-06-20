@@ -1,4 +1,22 @@
-### Creating and Uploading a Dataset using Hugging Face
+## Creating your own dataset using ChatGPT / Gemini extension in sheet
+
+On this step, it required you to install some chatgpt or gemini extension for spreadsheet, if you have token for openai and gemini, you can also use the app script to auto generate data.
+
+This is the step to semi auto-generate the dataset for your llama.
+
+1. You need to make some context column for making the dataset, in my case i will use "Tingkat", "Mata Pelajaran", "Kategori",	"Subkategori" in Salinan Dataset Soal.xml
+2. Then make one column for concatenate the context, in my case it will be "Untuk" column, and use this formula:
+   ```spread sheet formula
+   =CONCATENATE(A2;" ";B2;" ";C2;" ";D2;)
+   ```
+3. After you have installe the extension, you can activate it and use this formula:
+   ```extension prompt
+   =GPT("buat 1 pertanyaan ujian tanpa disertai jawaban saja, tanpa kata-kata lain selain soal untuk "; E2)
+   ```
+   or you can try another prompt using another LLM extension.
+4. Now you have your question column, do the answer based on your question, and use the prompt to make answer based on your needs!
+
+## Creating and Uploading a Dataset using Hugging Face
 
 This a step-by-step guide for creating a dataset formatted for Llama training using the Hugging Face `datasets` library and uploading it to the Hugging Face Hub.
 
