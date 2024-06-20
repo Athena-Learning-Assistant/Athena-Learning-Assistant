@@ -228,6 +228,3 @@ print("Predictions have been saved to CSV file:", csv_file_path)
 from google.colab import files
 files.download(csv_file_path)
 ```
-
-## Conclusion
-This project provides a comprehensive pipeline for face recognition-based attendance using machine learning techniques. The system extracts frames from videos, detects faces, trains a neural network for face recognition, and makes predictions on video frames. The results can be visualized and saved for further analysis.
