@@ -1,4 +1,4 @@
-package com.haikal.athena.ui.aichat
+package com.haikal.athena.ui.main.aichat
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

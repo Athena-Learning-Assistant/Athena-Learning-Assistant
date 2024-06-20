@@ -1,4 +1,4 @@
-package com.haikal.athena.ui.absent
+package com.haikal.athena.ui.main.absent
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

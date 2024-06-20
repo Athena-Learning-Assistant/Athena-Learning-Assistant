@@ -9,13 +9,12 @@ import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.haikal.athena.MainActivity
+import com.haikal.athena.ui.main.MainActivity
 import com.haikal.athena.R
 import com.haikal.athena.data.RequestInformation
 import com.haikal.athena.data.local.pref.SessionManager
 import com.haikal.athena.databinding.ActivityLoginBinding
 import com.haikal.athena.ui.ViewModelFactory
-import com.haikal.athena.ui.forgotPassword.ForgotPasswordActivity
 import com.haikal.athena.ui.auth.register.RegisterActivity
 import kotlinx.coroutines.launch
 

@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ui.home.HomeFragment">
+    tools:context=".ui.main.home.HomeFragment">
 
     <!-- Welcome Text -->
     <TextView
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
-        android:text="Hello Welcome to ATHENA !!!"
+        android:layout_marginTop="16dp"
+        android:text="Welcome to ATHENA !!!"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,8 +30,6 @@
         android:src="@drawable/baseline_account_circle_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
 
     <!-- Features Text -->
     <TextView
@@ -60,10 +58,10 @@
         android:text="OCR\nOptical Character Recognition"
         android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/qaButton"
+        app:layout_constraintHeight_percent="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/featuresText"
-        app:layout_constraintWidth_percent="0.4"
-        app:layout_constraintHeight_percent="0.2" />
+        app:layout_constraintWidth_percent="0.4" />
 
     <!-- QA Feature -->
     <Button
@@ -79,36 +77,40 @@
         android:text="QA\nQuestion Answering"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
         app:layout_constraintStart_toEndOf="@+id/ocrButton"
         app:layout_constraintTop_toBottomOf="@+id/featuresText"
-        app:layout_constraintWidth_percent="0.4"
-        app:layout_constraintHeight_percent="0.2" />
+        app:layout_constraintWidth_percent="0.4" />
 
     <!-- TS Feature -->
     <Button
         android:id="@+id/tsButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
         android:background="@color/purple"
         android:drawableTop="@drawable/baseline_text_summarization"
         android:drawablePadding="8dp"
         android:orientation="vertical"
         android:padding="16dp"
-        android:text="TS\nText Summarization"
+        android:text="CAM\nDetection"
         android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/tgButton"
+        app:layout_constraintHeight_percent="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ocrButton"
-        app:layout_constraintWidth_percent="0.4"
-        app:layout_constraintHeight_percent="0.2" />
+        app:layout_constraintWidth_percent="0.4" />
 
     <!-- TG Feature -->
     <Button
         android:id="@+id/tgButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
         android:background="@color/purple"
         android:drawableTop="@drawable/baseline_text_summarization"
         android:drawablePadding="8dp"
@@ -153,19 +155,19 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/chatHistoryText"
-        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView" />
+        app:layout_constraintTop_toBottomOf="@id/chatHistoryText" />
 
     <FrameLayout
         android:id="@+id/fragmentContainer"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Bottom Navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -175,6 +177,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_navigation_menu" />
+        app:menu="@menu/bottom_navigation_menu"
+        android:background="@drawable/rounded_bottom_navigation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

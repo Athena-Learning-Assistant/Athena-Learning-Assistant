@@ -1,21 +1,18 @@
-package com.haikal.athena.ui.home
+package com.haikal.athena.ui.main.home
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.haikal.athena.OCRActivity
-import com.haikal.athena.QAActivity
-import com.haikal.athena.TGActivity
-import com.haikal.athena.TSActivity
+import com.haikal.athena.ui.features.OCRActivity
+import com.haikal.athena.ui.features.QAActivity
+import com.haikal.athena.ui.features.TGActivity
+import com.haikal.athena.ui.features.TSActivity
 import com.haikal.athena.adapter.ChatHistoryAdapter
 import com.haikal.athena.adapter.ChatHistoryItem
-import com.haikal.athena.databinding.ActivityMainBinding
 import com.haikal.athena.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {

@@ -1,4 +1,4 @@
-package com.haikal.athena.ui.absent
+package com.haikal.athena.ui.main.absent
 
 import android.os.Bundle
 import android.view.LayoutInflater

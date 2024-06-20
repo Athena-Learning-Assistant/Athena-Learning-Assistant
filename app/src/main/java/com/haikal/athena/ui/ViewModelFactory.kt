@@ -8,7 +8,7 @@ import com.haikal.athena.data.local.pref.SessionManager
 import com.haikal.athena.data.repository.AuthRepository
 import com.haikal.athena.ui.auth.login.LoginViewModel
 import com.haikal.athena.ui.auth.register.RegisterViewModel
-import com.haikal.athena.ui.profile.ProfileViewModel
+import com.haikal.athena.ui.main.profile.ProfileViewModel
 
 class ViewModelFactory private constructor(
     private val authRepository: AuthRepository,

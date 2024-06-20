@@ -1,10 +1,9 @@
-package com.haikal.athena.ui.forgotPassword
+package com.haikal.athena.ui.auth.forgotPassword
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.haikal.athena.MainActivity
 import com.haikal.athena.databinding.ActivityForgotPasswordBinding
 import com.haikal.athena.ui.auth.login.LoginActivity
 

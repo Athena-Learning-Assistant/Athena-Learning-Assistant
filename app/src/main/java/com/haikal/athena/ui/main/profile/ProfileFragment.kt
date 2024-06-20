@@ -1,4 +1,4 @@
-package com.haikal.athena.ui.profile
+package com.haikal.athena.ui.main.profile
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,7 +9,6 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
-import com.haikal.athena.MainActivity
 import com.haikal.athena.databinding.FragmentProfileBinding
 import com.haikal.athena.ui.ViewModelFactory
 import com.haikal.athena.ui.auth.login.LoginActivity

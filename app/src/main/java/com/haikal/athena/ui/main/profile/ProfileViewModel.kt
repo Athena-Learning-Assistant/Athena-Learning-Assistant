@@ -1,4 +1,4 @@
-package com.haikal.athena.ui.profile
+package com.haikal.athena.ui.main.profile
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
@@ -14,6 +14,5 @@ class ProfileViewModel(private val sessionManager: SessionManager) : ViewModel()
     // Fungsi untuk logout
     suspend fun logout() {
         sessionManager.clearAuthToken()
-        // Tambahkan logika lain yang diperlukan saat logout
     }
 }

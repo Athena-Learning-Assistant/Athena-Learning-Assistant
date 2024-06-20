@@ -18,7 +18,7 @@
             android:name=".ui.auth.register.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.forgotPassword.ForgotPasswordActivity"
+            android:name=".ui.auth.forgotPassword.ForgotPasswordActivity"
             android:exported="false" />
         <activity
             android:name=".ui.auth.login.LoginActivity"
@@ -30,19 +30,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TGActivity"
+            android:name=".ui.features.TGActivity"
             android:exported="false" />
         <activity
-            android:name=".TSActivity"
+            android:name=".ui.features.TSActivity"
             android:exported="false" />
         <activity
-            android:name=".QAActivity"
+            android:name=".ui.features.QAActivity"
             android:exported="false" />
         <activity
-            android:name=".OCRActivity"
+            android:name=".ui.features.OCRActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.main.MainActivity"
             android:exported="false">
 
             <!-- <intent-filter> -->

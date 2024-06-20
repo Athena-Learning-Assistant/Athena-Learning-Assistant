@@ -9,6 +9,10 @@
         android:icon="@drawable/baseline_ai_chat"
         android:title="Ai Chat" />
     <item
+        android:id="@+id/navigation_false"
+        android:title="Absent"
+        android:enabled="false"/>
+    <item
         android:id="@+id/navigation_absent"
         android:icon="@drawable/baseline_absent"
         android:title="Absent" />
