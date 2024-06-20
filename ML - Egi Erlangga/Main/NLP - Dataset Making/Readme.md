@@ -61,6 +61,21 @@ from datasets import load_dataset, Dataset
 
 Load the dataset from Hugging Face.
 
+In our plan, we decided to use this dataset:
+
+**Text generation general**
+1. afrizalha/Tumpeng-1-Indonesian
+2. NekoFi/alpaca-gpt4-indonesia-cleaned
+3. indonesian-nlp/mc4-id - used
+
+**Text summary general**
+1. iqballx/indonesian_news_datasets - used
+
+**Question answering**
+1. indonlp/indonlu
+2. jakartaresearch/indoqa
+3. indolem/IndoMMLU - used
+
 ```python
 # Load dataset
 dataset = load_dataset("indonlp/cendol_collection_v2")
