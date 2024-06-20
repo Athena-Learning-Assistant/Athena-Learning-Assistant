@@ -77,11 +77,13 @@ const login = async (req, res) => {
       return res.status(401).send({ error: "Invalid email or password" });
     }
 
-    const token = jwt.sign(
-      { uid: userRecord.uid, email: userRecord.email },
-      JWT_SECRET,
-      { expiresIn: "1h" }
-    );
+    const user = {
+      uid: userRecord.uid,
+      email: userRecord.email,
+      fullName: userData.data().fullName,
+    };
+
+    const token = jwt.sign(user, JWT_SECRET, { expiresIn: "1h" });
 
     res.status(200).send({ token });
   } catch (error) {

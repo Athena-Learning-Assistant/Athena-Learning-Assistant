@@ -46,7 +46,7 @@ const updateProfile = async (req, res) => {
   try {
     const usersRef = db.collection("users");
     const userDoc = usersRef.doc(uid);
-    await userDoc.update({ fullName, email }); // Update the Firestore document
+    await userDoc.update({ fullName, email }); 
 
     res.status(200).send({ fullName, email });
   } catch (error) {
