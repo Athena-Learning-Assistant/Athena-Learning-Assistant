@@ -32,9 +32,96 @@ athena/
     ├── app/
     │   ├── src/
     │   │   ├── main/
-    │   │   │   ├── java/
-    │   │   │   ├── res/
-    │   │   │   └── AndroidManifest.xml
+    │   │   │   ├── manifest/AndroidManifest.xml
+    │   │   │   ├── kotlin/
+    │   │   │   │   └── com/haikal/athena/
+    │   │   │   │       ├── adapter/
+    │   │   │   │       │   ├── ChatHistoryAdapter.kt
+    │   │   │   │       │   ├── ChatHistoryItem.kt
+    │   │   │   │       │   ├── MessageAdapter.kt
+    │   │   │   │       │   ├── MessageItem.kt
+    │   │   │   │       │   └── SaveAdapter.kt
+    │   │   │   │       ├── costumview/
+    │   │   │   │       │   ├── InputEmailView.kt
+    │   │   │   │       │   ├── InputPasswordView.kt
+    │   │   │   │       │   └── InputRePasswordView.kt
+    │   │   │   │       ├── data/
+    │   │   │   │       │   ├── di/
+    │   │   │   │       │   │   └── Injection.kt
+    │   │   │   │       │   ├── local/
+    │   │   │   │       │   │   ├── entity/
+    │   │   │   │       │   │   │   └── Save.kt
+    │   │   │   │       │   │   ├── pref/
+    │   │   │   │       │   │   │   ├── SessionManager.kt
+    │   │   │   │       │   │   │   └── UserModel.kt
+    │   │   │   │       │   │   └── room/
+    │   │   │   │       │   │       ├── SaveDao.kt
+    │   │   │   │       │   │       └── SaveDatabase.kt
+    │   │   │   │       │   ├── remote/
+    │   │   │   │       │   │   ├── response/
+    │   │   │   │       │   │   │   ├── ErrorResponse.kt
+    │   │   │   │       │   │   │   ├── LoginResponse.kt
+    │   │   │   │       │   │   │   └── RegisterResponse.kt
+    │   │   │   │       │   │   ├── retrofit/
+    │   │   │   │       │   │   │   ├── ApiConfig.kt
+    │   │   │   │       │   │   │   └── ApiService.kt
+    │   │   │   │       │   │   └── repository/
+    │   │   │   │       │   │       ├── AuthRepository.kt
+    │   │   │   │       │   │       └── SaveRepository.kt
+    │   │   │   │       │   └── RequestInformation.kt
+    │   │   │   │       ├── helper/
+    │   │   │   │       │   └── ImageClassifierHelper.kt
+    │   │   │   │       ├── ui/
+    │   │   │   │       │   ├── auth/
+    │   │   │   │       │   │   ├── login/
+    │   │   │   │       │   │   │   ├── LoginActivity.kt
+    │   │   │   │       │   │   │   └── LoginViewModel.kt
+    │   │   │   │       │   │   └── register/
+    │   │   │   │       │   │       ├── RegisterActivity.kt
+    │   │   │   │       │   │       └── RegisterViewModel.kt
+    │   │   │   │       │   ├── features/
+    │   │   │   │       │   │   ├── cam/
+    │   │   │   │       │   │   │   ├── CamActivity.kt
+    │   │   │   │       │   │   │   ├── CameraActivity.kt
+    │   │   │   │       │   │   │   ├── ResultActivity.kt
+    │   │   │   │       │   │   │   └── ResultViewModel.kt
+    │   │   │   │       │   │   └── ocr/
+    │   │   │   │       │   │       ├── OCRActivity.kt
+    │   │   │   │       │   │       └── OCRViewModel.kt
+    │   │   │   │       │   ├── features/
+    │   │   │   │       │   │   └── qa/
+    │   │   │   │       │   │       └── QAActivity.kt
+    │   │   │   │       │   ├── main/
+    │   │   │   │       │   │   ├── absent/
+    │   │   │   │       │   │   │   ├── AbsentFragment.kt
+    │   │   │   │       │   │   │   └── AbsentViewModel.kt
+    │   │   │   │       │   │   ├── aichat/
+    │   │   │   │       │   │   │   ├── AiChatFragment.kt
+    │   │   │   │       │   │   │   └── AiChatViewModel.kt
+    │   │   │   │       │   │   ├── home/
+    │   │   │   │       │   │   │   ├── DummyData.kt
+    │   │   │   │       │   │   │   ├── HistoriQaActivity.kt
+    │   │   │   │       │   │   │   ├── HomeFragment.kt
+    │   │   │   │       │   │   └── profile/
+    │   │   │   │       │   │       ├── ProfileFragment.kt
+    │   │   │   │       │   │       └── ProfileViewModel.kt
+    │   │   │   │       │   ├── main/
+    │   │   │   │       │   │   └── MainActivity.kt
+    │   │   │   │       │   ├── onboarding/
+    │   │   │   │       │   │   ├── Screen1Fragment.kt
+    │   │   │   │       │   │   ├── Screen2Fragment.kt
+    │   │   │   │       │   │   ├── Screen3Fragment.kt
+    │   │   │   │       │   │   ├── Screen4Fragment.kt
+    │   │   │   │       │   │   ├── ViewPagerAdapter.kt
+    │   │   │   │       │   │   ├── ViewPagerFragment.kt
+    │   │   │   │       │   │   └── ViewPagerFragment2.kt
+    │   │   │   │       │   └── splash/
+    │   │   │   │       |   ├── SplashScreenActivity.kt
+    │   │   │   │       |   └── SplashScreenFragment.kt
+    │   │   │   │       └── ViewModelFactory.kt
+    │   │   │   ├── res
+    │   │   │   └── ml/
+    │   │   │       └── model.tflite
     │   ├── build.gradle
     │   └── settings.gradle
     ├── docs/
