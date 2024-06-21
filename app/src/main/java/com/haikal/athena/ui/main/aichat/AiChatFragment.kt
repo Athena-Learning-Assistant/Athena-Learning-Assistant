@@ -77,7 +77,7 @@ class AiChatFragment : Fragment() {
             if (!TextUtils.isEmpty(messageText)) {
                 val message = Message(messageText, MessageType.SENT)
                 aiChatViewModel.addMessage(message)
-                val response = aiChatViewModel.generateResponse()
+                val response = aiChatViewModel.generateResponse(messageText)
                 aiChatViewModel.addMessage(Message(response, MessageType.RECEIVED))
                 binding.messageInput.text?.clear()
             }
