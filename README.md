@@ -2,6 +2,14 @@
 
 Welcome to the Athena repository! This Android application empowers teachers with artificial intelligence tools, streamlining administrative tasks, enhancing student engagement, and personalizing learning experiences.
 
+## Contributing 🤝
+
+We welcome contributions from the developer community! Please see our contributing guidelines for more information on how to get involved.
+
+- [Machine Learning Development](https://github.com/Athena-Learning-Assistant/Athena-Learning-Assistant/tree/Machine-Learning)
+- [Mobile Development](https://github.com/Athena-Learning-Assistant/Athena-Learning-Assistant/tree/Mobile-Development)
+- [Cloud Computing](https://github.com/Athena-Learning-Assistant/Athena-Learning-Assistant/tree/Cloud-Computing)
+
 ## Key Features ✨
 
 - **Document-Based Chatbot**: Interact with a chatbot trained on specific educational materials to answer student questions and provide personalized guidance.
@@ -49,14 +57,6 @@ The project is currently in active development, with the core features of the ch
 - **Juliandi Kurniansyah** (CC)
 - **Muhammad Haikal Fikri** (MD)
 - **Bramasta Natanael Dangawa** (MD)
-
-## Contributing 🤝
-
-We welcome contributions from the developer community! Please see our contributing guidelines for more information on how to get involved.
-
-- [Machine Learning Development](https://github.com/Athena-Learning-Assistant/Athena-Learning-Assistant/tree/Machine-Learning)
-- [Mobile Development](https://github.com/Athena-Learning-Assistant/Athena-Learning-Assistant/tree/Mobile-Development)
-- [Cloud Computing](https://github.com/Athena-Learning-Assistant/Athena-Learning-Assistant/tree/Cloud-Computing)
 
 ## Disclaimer ⚠️
 
